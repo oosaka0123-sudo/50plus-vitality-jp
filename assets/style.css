@@ -7,3 +7,5 @@ body{font-size:16px}
 .desk-nav a[aria-current="page"],.menu-panel a[aria-current="page"]{text-decoration:underline;text-underline-offset:5px}.fallback-list{font-size:17px;line-height:1.9;margin:24px 0 42px;padding-left:1.5em}.fallback-list li{margin:8px 0}.editorial-note{border-top:1px solid #3d443e;margin-top:50px;padding-top:18px;color:#b7beb7;font-size:13px}
 .answers button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
 @media(max-width:560px){.hero-lead{font-size:17px}.site-head{padding-bottom:12px}.kicker,.section-label{font-size:12px}.footer-bottom{font-size:12px}}
+
+.hero-dark .body-copy{color:#c8cec7}
