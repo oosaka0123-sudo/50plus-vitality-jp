@@ -9,3 +9,17 @@ body{font-size:16px}
 @media(max-width:560px){.hero-lead{font-size:17px}.site-head{padding-bottom:12px}.kicker,.section-label{font-size:12px}.footer-bottom{font-size:12px}}
 
 .hero-dark .body-copy{color:#c8cec7}
+
+/* Photo-first hero: restore original 50PLUS photography and prevent mobile overlap */
+.hero-photo{min-height:100svh;display:grid;grid-template-columns:minmax(0,.9fr) minmax(420px,1.1fr);grid-template-rows:auto 1fr auto;gap:22px 5vw;align-items:center;padding:132px var(--mx) 52px}
+.hero-photo .hero-intro{grid-column:1;grid-row:1/3;position:relative;z-index:2;align-self:center}
+.hero-photo .hero-intro h1{margin:20px 0 0;font-size:clamp(66px,9vw,142px)}
+.hero-photo-media{grid-column:2;grid-row:1/4;height:min(76vh,760px);overflow:hidden;position:relative;border:1px solid rgba(255,255,255,.2)}
+.hero-photo-media:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(17,22,18,.05),rgba(17,22,18,.32));pointer-events:none}
+.hero-photo-media picture,.hero-photo-media img{display:block;width:100%;height:100%}
+.hero-photo-media img{object-fit:cover;object-position:center}
+.hero-photo .hero-bottom{grid-column:1;grid-row:3;position:relative;z-index:2;align-self:end}
+.hero-photo .hero-lead{margin:0;max-width:620px;font-size:clamp(17px,1.45vw,20px)}
+.hero-photo .hero-index{right:24px;bottom:22px;color:rgba(255,255,255,.72)}
+@media(max-width:900px){.hero-photo{grid-template-columns:1fr;grid-template-rows:auto auto auto;min-height:auto;padding:112px var(--mx) 42px;gap:0}.hero-photo .hero-intro{grid-column:1;grid-row:1;align-self:auto}.hero-photo .hero-intro h1{font-size:clamp(60px,17vw,94px);line-height:.9;margin:18px 0 28px}.hero-photo-media{grid-column:1;grid-row:2;width:calc(100% + (var(--mx) * 2));margin-left:calc(var(--mx) * -1);height:52vh;min-height:360px;border-left:0;border-right:0}.hero-photo .hero-bottom{grid-column:1;grid-row:3;padding-top:30px}.hero-photo .hero-lead{font-size:18px;line-height:1.95;max-width:none}.hero-photo .hero-index{display:none}}
+@media(max-width:560px){.hero-photo{padding-top:110px;padding-bottom:34px}.hero-photo .kicker{font-size:11px;letter-spacing:.16em}.hero-photo .hero-intro h1{font-size:clamp(58px,17vw,78px);line-height:.92;letter-spacing:-.06em}.hero-photo-media{height:46vh;min-height:320px}.hero-photo .hero-lead{font-size:17px;line-height:1.9}.hero-photo .hero-cta{margin-top:24px}.hero-photo .outline{-webkit-text-stroke:1px currentColor}}
