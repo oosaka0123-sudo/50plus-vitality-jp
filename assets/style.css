@@ -43,3 +43,15 @@ body{font-size:16px}
 @media(prefers-reduced-motion:reduce){.opening-video{display:none}.opening{background:var(--dark)}}
 /* Information pages + footer links */
 .legal-copy{max-width:860px;font-size:17px;line-height:1.9}.legal-copy h2{font-family:var(--serif);font-weight:400;font-size:clamp(38px,6vw,72px);line-height:1.1;margin:0 0 38px}.legal-copy h3{font-size:20px;margin:44px 0 10px}.legal-copy p{margin:0 0 22px}.contact-panel{margin:36px 0;padding:clamp(24px,5vw,54px);background:var(--dark);color:var(--white)}.contact-cta{display:inline-flex;gap:14px;align-items:center;margin-top:18px;padding:14px 18px;border:1px solid currentColor;text-decoration:none}.contact-cta:hover{background:var(--white);color:var(--dark)}.footer .rss7-link{color:var(--lime);font-weight:700}.footer nav{align-content:start}@media(max-width:560px){.legal-copy{font-size:16px}.legal-copy h2{font-size:42px}.footer nav{grid-template-columns:1fr}.footer .rss7-link{margin-top:12px}}
+
+/* RSS7 network footer */
+.rss7-network{margin-top:46px;padding:34px 0 10px;border-top:1px solid #3d443e}
+.rss7-network-head{display:flex;align-items:baseline;gap:16px;margin-bottom:24px}
+.rss7-network-head span{font-size:13px;letter-spacing:.16em;font-weight:700}
+.rss7-network-head small{font-size:12px;color:#b7beb7}
+.rss7-network-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px 36px}
+.rss7-network-group h3{margin:0 0 12px;font-size:13px;letter-spacing:.04em;color:#b7beb7;font-weight:600}
+.rss7-network-group a{display:block;width:max-content;max-width:100%;padding:5px 0;color:inherit;text-decoration:none;font-size:14px;line-height:1.6}
+.rss7-network-group a:hover,.rss7-network-group a:focus-visible{text-decoration:underline;text-underline-offset:4px}
+@media(max-width:780px){.rss7-network-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 24px}}
+@media(max-width:520px){.rss7-network{margin-top:34px;padding-top:26px}.rss7-network-grid{grid-template-columns:1fr;gap:24px}.rss7-network-group a{font-size:15px;padding:6px 0}.rss7-network-head{display:block}.rss7-network-head small{display:block;margin-top:5px}}
